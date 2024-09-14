@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+      h1 {
+        text-align: right;
+        font-size: 48px;
+        font-weight: 900;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: yellow;
+        background-color: #333;
+        /* padding: 8px; */
+        padding-right: 24px;
+      }
+
+      p {
+        color: blue;
+      }
+
+      #main-detail {
+        text-align: center;
+        font-size: 18px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <!-- ^ Inline Stylesheet ^ -->
+    <header style="background-color: greenyellow">
+      <h1>CSS Class</h1>
+      <p id="main-detail">Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </header>
+    <!-- For Box Model 1 -->
+    <div
+      style="
+        background-color: red;
+        width: min-content;
+        height: min-content;
+        display: none;
+      "
+    >
+      <div
+        style="
+          width: 200px;
+          height: 200px;
+          background-color: blue;
+          margin: 24px;
+
+          border: 16px solid white;
+          padding: 16px;
+        "
+      >
+        <div style="width: 100%; height: 100%; background-color: yellow">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, et
+          dicta maxime obcaecati quam sunt eum! Natus dolorem aspernatur
+          incidunt.
+        </div>
+      </div>
+    </div>
+    <!-- For Box Model 2 -->
+    <div
+      style="
+        width: 200px;
+        height: 200px;
+        margin: 24px;
+        margin-top: 60px;
+        border: 8px solid white;
+        border-top-color: red;
+        padding: 16px;
+        color: dodgerblue;
+        border-radius: 50%;
+      "
+    >
+      Lorem ipsum dolor sit amet.
+    </div>
+    <!-- NEXT ! -->
+  </body>
 </html>
